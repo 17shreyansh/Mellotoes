@@ -1,0 +1,53 @@
+.footer-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F0D8B6; /* Creamy background with opacity */
+  z-index: -1;
+}
+
+/* Make the links look like regular text, no underline */
+.footer-container a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: #006d77; /* Teal color for hover state */
+}
+
+/* Style for the logo */
+.logo-container img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+/* Bullet points styling */
+.ant-list-item .ant-typography:first-child {
+  margin-right: 8px;
+}
+
+/* Social media icons styling */
+.social-icons .anticon {
+  font-size: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-icons .anticon:hover {
+  color: #006d77; /* Teal color on hover */
+  transform: scale(1.1);
+}
